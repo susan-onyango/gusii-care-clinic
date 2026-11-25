@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gusii Care Clinic | Patient Appointment Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Gusii Care <span>Clinic</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Departments</a></li>
+          <li><a href="#book">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Quality Healthcare in Kisii Town</h2>
+        <p>Skip the waiting line. Book your outpatient, dental, or lab appointment online in seconds.</p>
+        <a href="#book" class="btn-primary">Book an Appointment</a>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h3>Our Departments</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>General Outpatient</h4>
+          <p>Routine consultations, blood pressure checks, and rapid malaria & typhoid testing.</p>
+        </article>
+        <article class="card">
+          <h4>Dental & Optical</h4>
+          <p>Comprehensive dental checkups, cleanings, and vision screening services.</p>
+        </article>
+        <article class="card">
+          <h4>Maternal & Child Health</h4>
+          <p>Antenatal clinics, immunization schedules, and pediatric consultations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="booking-section">
+      <div class="container">
+        <h3>Book Your Visit</h3>
+        <form id="appointmentForm" class="booking-form">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" placeholder="e.g. Brian Moraa" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (Safaricom/Airtel) *</label>
+            <input type="tel" id="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required />
+          </div>
+
+          <div class="form-group">
+            <label for="department">Select Department *</label>
+            <select id="department" required>
+              <option value="">-- Choose Department --</option>
+              <option value="General Outpatient">General Outpatient</option>
+              <option value="Dental & Optical">Dental & Optical</option>
+              <option value="Maternal & Child Health">Maternal & Child Health</option>
+              <option value="Laboratory Services">Laboratory Services</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="visitDate">Preferred Date *</label>
+            <input type="date" id="visitDate" required />
+          </div>
+
+          <button type="submit" class="btn-primary full-width">Confirm Booking</button>
+        </form>
+
+        <div id="confirmationBox" class="confirmation hidden" role="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p><strong>Location:</strong> Hospital Road, Kisii Town | <strong>Open:</strong> Mon – Sat, 8:00 AM – 6:00 PM</p>
+      <p>&copy; 2026 Gusii Care Clinic. Built as a Web Development Portfolio Project.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

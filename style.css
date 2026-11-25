@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #0f766e;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.logo span {
+  color: #99f6e4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: #115e59;
+  color: #ffffff;
+  text-align: center;
+  padding: 3.5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #ccfbf1;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #f59e0b;
+  color: #0f172a;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #d97706;
+}
+
+/* Services Grid */
+.services {
+  padding: 3rem 0;
+}
+
+.services h3, .booking-section h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #0f766e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-top: 4px solid #0f766e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Booking Form */
+.booking-section {
+  background: #e2e8f0;
+  padding: 3rem 0;
+}
+
+.booking-form {
+  background: #ffffff;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.confirmation {
+  max-width: 520px;
+  margin: 1.5rem auto 0;
+  padding: 1.2rem;
+  background: #dcfce7;
+  border-left: 5px solid #16a34a;
+  color: #14532d;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
